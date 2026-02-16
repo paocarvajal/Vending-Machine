@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Negocio: Proyecto FemCare Puebla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ec4899;
+            /* Pink 500 */
+            --primary-dark: #be185d;
+            /* Pink 700 */
+            --secondary: #6366f1;
+            /* Indigo 500 */
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--text-main), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin: 3rem 0 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .metric-big {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .highlight {
+            color: var(--success);
+        }
+
+        .risk {
+            color: var(--danger);
+        }
+
+        .caution {
+            color: var(--warning);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        th {
+            background: rgba(236, 72, 153, 0.1);
+            color: var(--primary);
+        }
+
+        .verdict-box {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(99, 102, 241, 0.1));
+            border: 1px solid var(--primary);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .verdict-title {
+            font-size: 1.5rem;
+            color: var(--warning);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>PROYECTO: FEMCARE PUEBLA</h1>
+            <p class="subtitle">Análisis Estratégico y Financiero para Inversionistas</p>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">CFO Fraccional & Estratega de Negocios | Borrador
+                Confidencial</p>
+        </header>
+
+        <!-- 1. Resumen Ejecutivo -->
+        <section>
+            <div class="section-title">
+                <i class="fa-solid fa-briefcase"></i> 1. Resumen Ejecutivo
+            </div>
+            <p>El mercado de higiene femenina en universidades presenta una demanda inelástica (necesidad biológica) y
+                actualmente insatisfecha debido a fallos operativos de proveedores anteriores. La oportunidad radica en
+                la <strong>garantía de servicio</strong> y la <strong>proximidad logística</strong>.</p>
+        </section>
+
+        <!-- 2. Análisis de Mercado -->
+        <section>
+            <div class="section-title">
+                <i class="fa-solid fa-users"></i> 2. Mercado Objetivo (TAM)
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fa-solid fa-university"></i> UVM Puebla</h3>
+                    <div class="metric-big">~2,585</div>
+                    <p class="text-muted">Usuarias Potenciales (Est. 55% Mujeres)</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Infraestructura:</strong> 10 Sanitarios de Alta Densidad</p>
+                    <p><strong>Demanda Est. (Uso 5%):</strong> 129 ventas/semana</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> UAMP Campus Puebla</h3>
+                    <div class="metric-big">~750</div>
+                    <p class="text-muted">Usuarias Potenciales (Est. 50% Mujeres)</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Infraestructura:</strong> 3-4 Sanitarios</p>
+                    <p><strong>Demanda Est.:</strong> 35-40 ventas/semana</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Economía Unitaria -->
+        <section>
+            <div class="section-title">
+                <i class="fa-solid fa-coins"></i> 3. La Economía del "Átomo" (Por Unidad)
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Escenario Volumen ($5 MXN)</th>
+                        <th>Escenario Recomendado ($10 MXN)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Precio de Venta (PVP)</td>
+                        <td>$5.00</td>
+                        <td class="highlight" style="font-weight: bold;">$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Producto (COGS) + Logística</td>
+                        <td>$2.70</td>
+                        <td>$2.70</td>
+                    </tr>
+                    <tr>
+                        <td>Utilidad Bruta</td>
+                        <td>$2.30</td>
+                        <td class="highlight" style="font-weight: bold;">$7.30</td>
+                    </tr>
+                    <tr>
+                        <td>Margen Bruto</td>
+                        <td>46%</td>
+                        <td class="highlight" style="font-weight: bold;">73%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.9rem; color: var(--text-muted);"><em>Nota: El precio de $10 MXN ofrece un "colchón"
+                    operativo vital para mantenimiento y comisiones. En una emergencia, la sensibilidad al precio es
+                    baja.</em></p>
+        </section>
+
+        <!-- 4. Inversión Inicial (CAPEX) -->
+        <section>
+            <div class="section-title">
+                <i class="fa-solid fa-chart-line"></i> 4. Estructura de Capital (Estimación)
+            </div>
+            <div class="card">
+                <h3>Inversión Fase Piloto (12 Máquinas)</h3>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                        <span>Hardware (Mecánicas, 2-3 Espirales, 12 uds)</span>
+                        <strong>$144,000 MXN</strong>
+                    </li>
+                    <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                        <span>Inventario Inicial (2,000 uds)</span>
+                        <strong>$5,000 MXN</strong>
+                    </li>
+                    <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                        <span>Instalación, Branding y Logística</span>
+                        <strong>$10,000 MXN</strong>
+                    </li>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <li
+                        style="font-size: 1.2rem; display: flex; justify-content: space-between; color: var(--primary);">
+                        <span>TOTAL ESTIMADO</span>
+                        <strong>$159,000 MXN</strong>
+                    </li>
+                    <li
+                        style="margin-top: 0.5rem; display: flex; justify-content: space-between; color: var(--text-muted);">
+                        <span>Inversión por Socio (4 Socios)</span>
+                        <span>~$39,750 MXN c/u</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Veredicto y Riesgos -->
+        <div class="verdict-box">
+            <div class="verdict-title">VEREDICTO: PROCEDER CON CAUTELA</div>
+            <p>El modelo financiero es sólido. El riesgo no es la demanda, sino el <strong>ACCESO LOGÍSTICO Y
+                    CONTRACTUAL</strong>.</p>
+
+            <h4 style="margin-top: 1.5rem; color: var(--text-main);">Próximos Pasos Críticos (Validación):</h4>
+            <div style="text-align: left; margin-top: 1rem;">
+                <p><i class="fa-solid fa-check-circle" style="color: var(--primary);"></i> <strong>Auditoría In-Situ
+                        (Scout):</strong> Verificar si las máquinas antiguas siguen instaladas y quién es el dueño.</p>
+                <p><i class="fa-solid fa-check-circle" style="color: var(--primary);"></i> <strong>Negociación:</strong>
+                    Evitar renta fija. Buscar pagar un % de las ventas brutas (10-15%) a la universidad.</p>
+                <p><i class="fa-solid fa-check-circle" style="color: var(--primary);"></i> <strong>Estrategia de
+                        Salida:</strong> Si la universidad cancela, las máquinas son activos líquidos recuperables (60%
+                    valor).</p>
+            </div>
+        </div>
+
+        <footer style="margin-top: 4rem; text-align: center; color: var(--text-muted); font-size: 0.8rem;">
+            <p>Generado por Business Case Agent | Antigravity AI</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

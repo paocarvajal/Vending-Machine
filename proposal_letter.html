@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Comercial - FEMCARE</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ec4899;
+            /* Pink 500 */
+            --dark: #1e293b;
+            /* Slate 800 */
+            --light: #f8fafc;
+            /* Slate 50 */
+            --accent: #64748b;
+            /* Slate 500 */
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            /* Serif for formal letter feel */
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+
+        .paper {
+            background: white;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+
+        /* Letterhead */
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .brand {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary);
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sender-info {
+            text-align: right;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            color: var(--dark);
+        }
+
+        .highlight {
+            background: rgba(236, 72, 153, 0.1);
+            padding: 0 4px;
+            font-weight: 600;
+            color: #be185d;
+        }
+
+        .offer-box {
+            background: #fdf2f8;
+            border: 1px solid #fbcfe8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .offer-title {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .sign-off {
+            margin-top: 4rem;
+        }
+
+        .signature {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 3rem;
+        }
+
+        .role {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .paper {
+                box-shadow: none;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="paper">
+        <header>
+            <div class="brand">
+                <i class="fa-solid fa-venus"></i> FEMCARE
+            </div>
+            <div class="sender-info">
+                Puebla, Pue.<br>
+                Tel: 222-XXX-XXXX<br>
+                contacto@femcare.mx
+            </div>
+        </header>
+
+        <p><strong>Fecha:</strong> 17 de Febrero, 2026<br>
+            <strong>Asunto:</strong> Propuesta de Alianza para Bienestar Estudiantil
+        </p>
+
+        <p style="margin-top: 2rem;"><strong>A quien corresponda (Dirección Administrativa / Consejería
+                Estudiantil):</strong></p>
+
+        <p>Es un placer saludarle. Le escribo para presentarle <strong>FEMCARE</strong>, una iniciativa diseñada
+            específicamente para elevar la calidad de vida y el bienestar del alumnado femenino en su campus.</p>
+
+        <p>Hemos identificado una necesidad crítica en la vida universitaria: las emergencias de higiene femenina son
+            impredecibles y, actualmente, obligan a las estudiantes a interrumpir sus actividades académicas para salir
+            del campus o buscar soluciones incómodas. Esto impacta directamente en su asistencia y confort.</p>
+
+        <h2>Nuestra Propuesta</h2>
+        <p>FEMCARE ofrece la instalación y operación de una red de dispensadores automáticos de toallas femeninas de
+            primera necesidad dentro de los sanitarios de la universidad. Nuestro modelo es <strong>"Cero Costo / Cero
+                Esfuerzo"</strong> para la institución:</p>
+
+        <ul style="list-style: none; padding-left: 0; margin: 1.5rem 0;">
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check"
+                    style="color: var(--primary); margin-right: 10px;"></i> <strong>Sin Inversión:</strong> Nosotros
+                cubrimos el 100% del costo de las máquinas y producto.</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check"
+                    style="color: var(--primary); margin-right: 10px;"></i> <strong>Operación Autónoma:</strong> Nuestro
+                personal (identificado) se encarga del reabastecimiento y mantenimiento.</li>
+            <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 10px;"></i> <strong>Sin
+                    Electricidad:</strong> Usamos equipos mecánicos modernos que no consumen luz ni requieren cableado.
+            </li>
+        </ul>
+
+        <div class="offer-box">
+            <span class="offer-title"><i class="fa-solid fa-handshake"></i> Modelo de Retribución Institucional</span>
+            Para agradecer la confianza y el espacio, FEMCARE propone un esquema de retorno social:
+            <br><br>
+            <strong>"Reembolso del 10% de las ventas netas"</strong> destinado directamente al <u>Fondo de Becas</u> o
+            <u>Actividades Estudiantiles</u> de la universidad.
+            <br><br>
+            <em style="font-size: 0.9rem; color: var(--accent);">De esta forma, cada emergencia resuelta contribuye a la
+                educación de otra estudiante.</em>
+        </div>
+
+        <p>Nos encantaría comenzar con una <strong>Prueba Piloto de 30 días</strong> en una ubicación de alta afluencia
+            (ej. Cafetería o Edificio Principal) para demostrar la utilidad y la calidad de nuestro servicio, sin ningún
+            compromiso de permanencia.</p>
+
+        <p>Quedo a su entera disposición para agendar una breve visita técnica y mostrarle el prototipo del servicio.
+        </p>
+
+        <div class="sign-off">
+            Atentamente,
+
+            <div class="signature">Paola Carvajal Sánchez</div>
+            <div class="role">Directora General, FEMCARE Puebla</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

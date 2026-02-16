@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered Vending Machine Business Dashboard & Interface">
+    <title>Vending Machine | Business Case & Ops</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="container fade-in">
+        <div class="brand">
+            <i class="fa-solid fa-robot"></i>
+            <span>VendingOps AI</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link active">Dashboard</a>
+            <a href="#" class="nav-link">Inventory</a>
+            <a href="#" class="nav-link">Analytics</a>
+            <a href="#" class="nav-link">Settings</a>
+        </nav>
+        <div class="user-profile">
+            <button class="btn btn-outline">
+                <i class="fa-solid fa-user-tie"></i> CFO View
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Strategic Brief -->
+        <section class="intro fade-in delay-100">
+            <h1>Business Case Verification</h1>
+            <p>Real-time analysis of Capital Preservation, Asset Valuation, and Operational COGS.</p>
+        </section>
+
+        <!-- KPI Dashboard -->
+        <section class="dashboard-grid fade-in delay-200">
+            <!-- Metric 1: Asset Valuation -->
+            <div class="card">
+                <div class="metric-label">Asset Valuation (NPV)</div>
+                <div class="metric-value">$<span id="npv-value">0.00</span></div>
+                <div class="status-badge status-warning">Pending Data</div>
+                <p style="font-size: 0.8rem; margin-top: 1rem;">Based on 5-year projection</p>
+            </div>
+
+            <!-- Metric 2: ROI -->
+            <div class="card">
+                <div class="metric-label">Proj. ROI (Year 1)</div>
+                <div class="metric-value"><span id="roi-value">0</span>%</div>
+                <div class="status-badge status-warning">Calculating</div>
+                <p style="font-size: 0.8rem; margin-top: 1rem;">Bear case scenario active</p>
+            </div>
+
+            <!-- Metric 3: Operational Status -->
+            <div class="card">
+                <div class="metric-label">Operational Health</div>
+                <div class="metric-value">98.5%</div>
+                <div class="status-badge status-success">Optimal</div>
+                <p style="font-size: 0.8rem; margin-top: 1rem;">System uptime & logic check</p>
+            </div>
+        </section>
+
+        <!-- Operations / Vending Interface -->
+        <section class="vending-interface fade-in delay-300">
+            <div class="card" style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px dashed var(--text-secondary);">
+                <i class="fa-solid fa-boxes-stacked" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
+                <h3>Inventory Management System</h3>
+                <p>Initialize the inventory grid to start tracking COGS.</p>
+                <button class="btn btn-primary" id="init-system-btn">
+                    <i class="fa-solid fa-power-off" style="margin-right: 0.5rem;"></i> Initialize System
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

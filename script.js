@@ -55,14 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const stockPercent = (machine.stock / MAX_STOCK) * 100;
             let statusColor = 'var(--success)';
             let statusBadge = 'ONLINE';
+            let badgeClass = 'badge-ok';
 
             if (stockPercent < 20) {
                 statusColor = 'var(--danger)';
                 statusBadge = 'CRITICAL';
+                badgeClass = 'badge-critical';
                 alertCount++;
             } else if (stockPercent < 40) {
                 statusColor = 'var(--warning)';
                 statusBadge = 'LOW';
+                badgeClass = 'badge-warn';
             }
 
             // Create Card
@@ -74,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="font-weight:700; font-size:1.1rem;">${machine.id}</div>
                         <div style="font-size:0.8rem; color:var(--text-secondary);">${machine.location}</div>
                     </div>
-                    <span class="badge" style="background:${statusColor}20; color:${statusColor}">${statusBadge}</span>
+                    <span class="badge ${badgeClass}">${statusBadge}</span>
                 </div>
                 
                 <div class="stock-indicator">
@@ -82,16 +85,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>Stock Level</span>
                         <span>${machine.stock} / ${MAX_STOCK}</span>
                     </div>
-                    <div style="width:100%; height:8px; background:rgba(255,255,255,0.1); border-radius:4px; overflow:hidden;">
+                    <div class="progress-bar-bg">
                         <div style="width:${stockPercent}%; height:100%; background:${statusColor}; transition:width 0.5s;"></div>
                     </div>
                 </div>
 
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05);">
+                <div class="machine-actions">
                     <div style="font-size:0.7rem; color:var(--text-secondary);">
                         Refilled: ${machine.lastRefill}
                     </div>
-                    <button class="btn btn-sm btn-outline" style="border:1px solid var(--glass-border); color:#fff;" onclick="window.refillMachine(${index})">
+                    <button class="btn btn-sm btn-outline" onclick="window.refillMachine(${index})">
                         <i class="fa-solid fa-rotate"></i> Restock
                     </button>
                 </div>

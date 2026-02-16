@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI-Powered Vending Machine Business Dashboard & Interface">
-    <title>Vending Machine | Business Case & Ops</title>
+    <title>VendingOps | Panel de Control</title>
     <!-- Modern Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <header class="container fade-in">
@@ -22,65 +24,90 @@
             <span>VendingOps AI</span>
         </div>
         <nav class="nav-links">
-            <a href="#" class="nav-link active">Dashboard</a>
-            <a href="#" class="nav-link">Inventory</a>
-            <a href="#" class="nav-link">Analytics</a>
-            <a href="#" class="nav-link">Settings</a>
+            <a href="#" class="nav-link active">Operaciones</a>
+            <a href="business_case_femcare.html" class="nav-link">Caso de Negocio</a>
+            <a href="#" class="nav-link">Reportes</a>
         </nav>
         <div class="user-profile">
-            <button class="btn btn-outline">
-                <i class="fa-solid fa-user-tie"></i> CFO View
-            </button>
+            <span class="badge badge-ok" style="margin-right: 1rem;">
+                <i class="fa-solid fa-circle"></i> Sistema Online
+            </span>
+            <i class="fa-solid fa-user-gear" style="color: var(--text-secondary);"></i>
         </div>
     </header>
 
     <main class="container">
-        <!-- Strategic Brief -->
-        <section class="intro fade-in delay-100">
-            <h1>Business Case Verification</h1>
-            <p>Real-time analysis of Capital Preservation, Asset Valuation, and Operational COGS.</p>
+        <!-- Daily Stats Summary -->
+        <section class="ops-stats fade-in delay-100">
+            <!-- Stat 1 -->
+            <div class="card stat-card">
+                <div class="stat-icon icon-blue">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary);">Flota Activa</div>
+                    <div style="font-size: 1.5rem; font-weight: 700;">12 / 12</div>
+                </div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="card stat-card">
+                <div class="stat-icon icon-green">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary);">Inventario Total</div>
+                    <div style="font-size: 1.5rem; font-weight: 700;" id="total-stock-display">--</div>
+                </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="card stat-card">
+                <div class="stat-icon icon-red">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary);">Alertas (Stock Bajo)</div>
+                    <div style="font-size: 1.5rem; font-weight: 700;" id="alert-count-display">0</div>
+                </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="card stat-card">
+                <div class="stat-icon" style="background: rgba(236, 72, 153, 0.2); color: var(--secondary-color);">
+                    <i class="fa-solid fa-cash-register"></i>
+                </div>
+                <div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary);">Ventas (Simulado)</div>
+                    <div style="font-size: 1.5rem; font-weight: 700;">$ --</div>
+                </div>
+            </div>
         </section>
 
-        <!-- KPI Dashboard -->
-        <section class="dashboard-grid fade-in delay-200">
-            <!-- Metric 1: Asset Valuation -->
-            <div class="card">
-                <div class="metric-label">Asset Valuation (NPV)</div>
-                <div class="metric-value">$<span id="npv-value">0.00</span></div>
-                <div class="status-badge status-warning">Pending Data</div>
-                <p style="font-size: 0.8rem; margin-top: 1rem;">Based on 5-year projection</p>
-            </div>
-
-            <!-- Metric 2: ROI -->
-            <div class="card">
-                <div class="metric-label">Proj. ROI (Year 1)</div>
-                <div class="metric-value"><span id="roi-value">0</span>%</div>
-                <div class="status-badge status-warning">Calculating</div>
-                <p style="font-size: 0.8rem; margin-top: 1rem;">Bear case scenario active</p>
-            </div>
-
-            <!-- Metric 3: Operational Status -->
-            <div class="card">
-                <div class="metric-label">Operational Health</div>
-                <div class="metric-value">98.5%</div>
-                <div class="status-badge status-success">Optimal</div>
-                <p style="font-size: 0.8rem; margin-top: 1rem;">System uptime & logic check</p>
-            </div>
-        </section>
-
-        <!-- Operations / Vending Interface -->
-        <section class="vending-interface fade-in delay-300">
-            <div class="card" style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px dashed var(--text-secondary);">
-                <i class="fa-solid fa-boxes-stacked" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
-                <h3>Inventory Management System</h3>
-                <p>Initialize the inventory grid to start tracking COGS.</p>
-                <button class="btn btn-primary" id="init-system-btn">
-                    <i class="fa-solid fa-power-off" style="margin-right: 0.5rem;"></i> Initialize System
+        <!-- Tool Bar -->
+        <section style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;"
+            class="fade-in delay-200">
+            <h2><i class="fa-solid fa-map-location-dot"></i> Estado de Máquinas</h2>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-primary" onclick="window.simulateSales()">
+                    <i class="fa-solid fa-play"></i> Simular Ventas (Demo)
+                </button>
+                <button class="btn btn-outline"
+                    style="border: 1px solid var(--glass-border); color: var(--text-primary);"
+                    onclick="window.resetFleet()">
+                    <i class="fa-solid fa-rotate-right"></i> Reset
                 </button>
             </div>
         </section>
+
+        <!-- Machine Grid Container (Rendered by JS) -->
+        <section id="machine-grid" class="ops-stats machine-grid fade-in delay-200">
+            <!-- JS will populate cards here -->
+        </section>
+
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

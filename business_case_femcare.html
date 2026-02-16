@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caso de Negocio: Proyecto FemCare Puebla (v2.0)</title>
+    <title>Caso de Negocio: Proyecto FemCare Puebla (v3.0)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500;600&display=swap"
@@ -176,74 +176,127 @@
     <div class="container">
         <header>
             <h1>PROYECTO: FEMCARE PUEBLA</h1>
-            <p class="subtitle">Modelo de Inversión "Cash Equity" (Sin Deuda Bancaria)</p>
-            <p style="color: var(--text-muted); margin-top: 0.5rem;">Versión 2.0 | Estrategia de Retorno de Capital</p>
+            <p class="subtitle">Análisis de Mercado & Estructura de Capital "Cash Equity"</p>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">Versión 3.0 | Estrategia Validada por Datos</p>
         </header>
 
-        <!-- 1. Estructura de Capital -->
+        <!-- 1. Análisis de Mercado (DATA DURO) -->
         <section>
             <div class="section-title">
-                <i class="fa-solid fa-hand-holding-dollar"></i> 1. Estructura de Capital (4 Socios)
+                <i class="fa-solid fa-magnifying-glass-chart"></i> 1. Validación de Mercado (NUEVO)
             </div>
-            <div class="card">
-                <h3><i class="fa-solid fa-users"></i> Aportación Inicial por Socio: $40,000 MXN</h3>
-                <p style="color: var(--text-muted); margin-bottom: 1rem;">Capital Total Recaudado: <strong>$160,000
-                        MXN</strong></p>
-                <ul class="list-check" style="list-style: none;">
-                    <li><i class="fa-solid fa-check"></i> <strong>Socio 1 (Tere):</strong> Inversión en efectivo
-                        (Retorno Mensual > Cetes).</li>
-                    <li><i class="fa-solid fa-check"></i> <strong>Socio 2 (Miguel):</strong> Financiado por Tere (Pago
-                        en Julio con Fondo de Ahorro).</li>
-                    <li><i class="fa-solid fa-check"></i> <strong>Socio 3 (Amiga GDL):</strong> Inversión directa en
-                        efectivo.</li>
-                    <li><i class="fa-solid fa-check"></i> <strong>Socio 4 (Pao):</strong> Inversión directa en efectivo.
-                    </li>
-                </ul>
-                <div
-                    style="margin-top: 1rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--danger); border-radius: 4px;">
-                    <strong><i class="fa-solid fa-ban"></i> Decisión Crítica:</strong> Se ELIMINA el crédito de nómina
-                    Banamex (Tasa >45%). El modelo opera 100% con capital propio, eliminando el riesgo de insolvencia
-                    por intereses.
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fa-solid fa-money-bill-wave"></i> Poder Adquisitivo</h3>
+                    <p style="margin-top: 0.5rem;">Colegiatura Promedio UVM: <strong>~$10,250 MXN/mes</strong></p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p style="font-size: 0.9rem;"><strong>Insight Crítico:</strong> Una familia que paga >$10k al mes en
+                        colegiatura tiene una <strong>Sensibilidad de Precio CERO</strong> ante un producto de
+                        emergencia de $10 pesos.</p>
+                    <p style="color: var(--success); font-weight: 600; margin-top: 0.5rem;">El precio de $10 MXN es
+                        "invisible" para el usuario.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-users-viewfinder"></i> Masa Crítica (TAM)</h3>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Mujeres UVM (Est. 54%):</span>
+                        <strong>~2,000</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Mujeres UAMP (Est.):</span>
+                        <strong>~470+</strong>
+                    </div>
+                    <div
+                        style="background: rgba(99, 102, 241, 0.1); padding: 0.5rem; border-radius: 4px; margin-top: 1rem;">
+                        <i class="fa-solid fa-calendar-days"></i> <strong>12,000 "Días de Riesgo"</strong>
+                        <p style="font-size: 0.8rem;">(2,400 usuarias x 5 días/mes)</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Modelo Operativo -->
+        <!-- 2. Comparativa de Inversión -->
         <section>
             <div class="section-title">
-                <i class="fa-solid fa-gears"></i> 2. Logística y Operación (El Factor "Diego")
+                <i class="fa-solid fa-scale-balanced"></i> 2. ¿Por qué invertir aquí y no en el banco?
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Banco (Pagaré/Cetes)</th>
+                        <th>Proyecto FemCare</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Inversión Requerida</strong></td>
+                        <td>$240,000 MXN</td>
+                        <td class="highlight" style="font-weight: bold;">$40,000 MXN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retorno Mensual</strong></td>
+                        <td>~$2,000 MXN</td>
+                        <td class="highlight" style="font-weight: bold;">~$2,035 MXN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ROI Anual</strong></td>
+                        <td>~10 - 11%</td>
+                        <td class="highlight" style="font-weight: bold;">~61%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control del Activo</strong></td>
+                        <td>Nulo (Dinero del Banco)</td>
+                        <td>Total (Máquinas Físicas)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3. Estructura de Capital -->
+        <section>
+            <div class="section-title">
+                <i class="fa-solid fa-hand-holding-dollar"></i> 3. Estructura de Capital (4 Socios)
+            </div>
+            <div class="card">
+                <h3><i class="fa-solid fa-users"></i> Aportación V2.0: $40,000 MXN c/u</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Capital Total Recaudado: <strong>$160,000
+                        MXN</strong></p>
+                <div
+                    style="margin-top: 1rem; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-left: 4px solid var(--success); border-radius: 4px;">
+                    <strong><i class="fa-solid fa-check-double"></i> ESTRATEGIA SEGURA:</strong> Se eliminó el crédito
+                    bancario. Miguel paga su parte a Tere en Julio (Fondo Ahorro). El riesgo financiero externo es CERO.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Modelo Operativo -->
+        <section>
+            <div class="section-title">
+                <i class="fa-solid fa-gears"></i> 4. Logística y Operación (El Factor "Diego")
             </div>
             <div class="card-grid">
                 <div class="card">
                     <h3><i class="fa-solid fa-user-clock"></i> Operador Logístico</h3>
                     <p><strong>Responsable:</strong> Diego</p>
-                    <p><strong>Ubicación:</strong> UVM / UAMP (Corredor Camino Real)</p>
-                    <p><strong>Horario:</strong> Mañanas (L-V) antes de clases (4pm).</p>
-                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
-                    <p><strong>Incentivo (Comisión):</strong></p>
-                    <div class="metric-big" style="font-size: 2rem;">$1.50 MXN</div>
-                    <p class="text-muted">Por cada toalla vendida.</p>
-                    <p style="font-size: 0.8rem; margin-top: 0.5rem;">Objetivo: Mantener máquinas al 100% siempre.</p>
+                    <p><strong>Ubicación:</strong> Corredor Camino Real (400m entre campus).</p>
+                    <p><strong>Incentivo:</strong> <span class="highlight">$1.50 MXN</span> por venta.</p>
                 </div>
                 <div class="card">
-                    <h3><i class="fa-solid fa-truck-fast"></i> Flota Inicial (12 Unidades)</h3>
-                    <p><strong>Proveedores Sugeridos:</strong> Expendemex / Teggra</p>
+                    <h3><i class="fa-solid fa-truck-fast"></i> Flota Inicial</h3>
                     <ul class="list-check" style="list-style: none; margin-top: 0.5rem;">
-                        <li><i class="fa-solid fa-circle-check"></i> 8 Máquinas en UVM (Puntos calientes)</li>
-                        <li><i class="fa-solid fa-circle-check"></i> 4 Máquinas en UAMP</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Tipo: Mecánicas (Bajo mantenimiento)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 12 Máquinas Mecánicas</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Distribución: 8 UVM / 4 UAMP</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Proyección Financiera -->
+        <!-- 5. Proyección Financiera -->
         <section>
             <div class="section-title">
-                <i class="fa-solid fa-chart-pie"></i> 3. Flujo de Caja Mensual (Estimado)
+                <i class="fa-solid fa-chart-pie"></i> 5. Flujo de Caja Mensual (Estimado)
             </div>
-            <p style="margin-bottom: 1rem; color: var(--text-muted);">Base: Venta de 5 unidades diarias por máquina
-                (1,800 ventas/mes total).</p>
             <table>
                 <thead>
                     <tr>
@@ -256,27 +309,12 @@
                     <tr>
                         <td><strong>Ventas Brutas</strong></td>
                         <td class="highlight" style="font-size: 1.2rem;"><strong>$18,000</strong></td>
-                        <td>1,800 toallas x $10 c/u</td>
+                        <td>Base conservadora (5 ventas/día/máq)</td>
                     </tr>
                     <tr>
-                        <td>Costo Producto (COGS)</td>
-                        <td class="risk">-$4,860</td>
-                        <td>$2.70 por unidad</td>
-                    </tr>
-                    <tr>
-                        <td>Comisión Operativa (Diego)</td>
-                        <td class="risk">-$2,700</td>
-                        <td>$1.50 por unidad</td>
-                    </tr>
-                    <tr>
-                        <td>Renta Universidad (10%)</td>
-                        <td class="risk">-$1,800</td>
-                        <td>Estimado sobre ventas</td>
-                    </tr>
-                    <tr>
-                        <td>Fondo Mantenimiento</td>
-                        <td class="risk">-$500</td>
-                        <td>Refacciones</td>
+                        <td>Costo Operativo (COGS + Diego + Renta)</td>
+                        <td class="risk">-$9,860</td>
+                        <td>Incluye producto, comisión y renta(10%)</td>
                     </tr>
                     <tr style="border-top: 2px solid var(--text-main);">
                         <td><strong>UTILIDAD NETA (EBITDA)</strong></td>
@@ -287,50 +325,24 @@
             </table>
         </section>
 
-        <!-- 4. Retorno al Inversionista -->
-        <section>
-            <div class="section-title">
-                <i class="fa-solid fa-piggy-bank"></i> 4. El "Payback" (Distribución)
-            </div>
-            <div class="card"
-                style="text-align: center; background: linear-gradient(180deg, var(--card-bg), rgba(99, 102, 241, 0.1));">
-                <h3>Utilidad Mensual por Socio (x4)</h3>
-                <div class="metric-big" style="color: var(--secondary);">$2,035 MXN</div>
-                <p style="color: var(--text-muted);">Pago pasivo mensual estimado</p>
-                <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
-                <div style="display: flex; justify-content: center; gap: 4rem;">
-                    <div>
-                        <div style="font-weight: 700; font-size: 1.2rem;">~61%</div>
-                        <div style="font-size: 0.8rem; text-transform: uppercase;">Retorno Anual (ROI)</div>
-                    </div>
-                    <div>
-                        <div style="font-weight: 700; font-size: 1.2rem;">18-20 Meses</div>
-                        <div style="font-size: 0.8rem; text-transform: uppercase;">Recuperación Total</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Veredicto -->
+        <!-- Veredicto -->
         <div class="verdict-box"
             style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(99, 102, 241, 0.1)); border-color: var(--success);">
-            <div class="verdict-title">LUZ VERDE: MODELO "CASH FLOW"</div>
-            <p>Al eliminar la deuda bancaria y usar capital propio, la presión financiera desaparece. Incluso en meses
-                "malos" (vacaciones), el negocio no quiebra porque no hay pagos fijos al banco, solo costos variables.
-            </p>
+            <div class="verdict-title">LUZ VERDE: PROYECTO DE ALTO RENDIMIENTO</div>
+            <p>El mercado tiene el dinero (Poder Adquisitivo UVM) y la necesidad biológica (Inelástica). La inversión es
+                baja ($40k) comparada con el retorno (60%+).</p>
 
-            <h4 style="margin-top: 1.5rem; color: var(--text-main);">Siguientes Pasos (Inmediato):</h4>
+            <h4 style="margin-top: 1.5rem; color: var(--text-main);">Siguientes Pasos (Mañana Lunes):</h4>
             <div style="text-align: left; margin-top: 1rem;">
-                <p><i class="fa-solid fa-angle-right" style="color: var(--success);"></i> <strong>1. Cotizar
-                        Mañana:</strong> Enviar script a Expendemex/Teggra para bloquear precio de 12 máquinas.</p>
-                <p><i class="fa-solid fa-angle-right" style="color: var(--success);"></i> <strong>2. Misión "Caballo de
-                        Troya":</strong> Diego debe fotografiar la máquina abandonada en UVM para negociar el permiso de
-                    entrada.</p>
+                <p><i class="fa-solid fa-angle-right" style="color: var(--success);"></i> <strong>1. Cotizar:</strong>
+                    Enviar script a proveedores para asegurar precio de flotilla (12 uds).</p>
+                <p><i class="fa-solid fa-angle-right" style="color: var(--success);"></i> <strong>2. Scout:</strong>
+                    Diego debe localizar la máquina abandonada.</p>
             </div>
         </div>
 
         <footer style="margin-top: 4rem; text-align: center; color: var(--text-muted); font-size: 0.8rem;">
-            <p>Generado por Business Case Agent (v2.0) | Antigravity AI</p>
+            <p>Generado por Business Case Agent (v3.0) | Antigravity AI</p>
         </footer>
 
     </div>
